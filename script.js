@@ -7,3 +7,4 @@ const adaptive = 4;
 
 alert("Hello World!" + " " + screenPrice);
 console.log(title + " " + rollback + " " + "Hello World!");
+//изменение
