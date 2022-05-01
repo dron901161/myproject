@@ -29,8 +29,9 @@ let fullPrice = screenPrice + servicePrice1 + servicePrice2;
 // Объявить переменную servicePercentPrice и занести в нее итоговую стоимость за вычетом отката посреднику 
 // (servicePercentPrice = fullPrice - Откат посреднику), округлив результат в большую сторону 
 // (методы объекта Math в помощь). Вывести servicePercentPrice в консоль.
+// servicePercentPrice = округляем(всяСтоимость - (всяСтоимость * (откат / 100)
 let rollback = 15; // Откат посреднику
-let servicePercentPrice = fullPrice - (fullPrice * (rollback / 100));
+let servicePercentPrice = Math.ceil(fullPrice - (fullPrice * (rollback / 100)));
 console.log(servicePercentPrice);
 
 // Написать конструкцию условий (расчеты приведены в рублях) (вывести в консоль)
